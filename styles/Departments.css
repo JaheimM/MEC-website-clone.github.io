@@ -1,0 +1,13 @@
+.department-list a {
+    color: black;
+    font-size: 60px;
+    margin: 20%;
+    padding: 10px;
+}
+
+.department-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Display settings*/
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-family: 'Roboto', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+footer {
+  clear: both;
+  margin-top: 2.5em;
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #bbbbbb;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2em;
+  margin: 5px;
+}
+
+hr {
+    border: 3px #ffcd05 solid;
+}
+
+footer hr {
+  border: 1px #ffcd05 solid;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+nav a:hover {
+    color: #ffcd05;
+}
+
+.text-center h3 {
+    color: white;
+}
+
+.text-center h1, h3 {
+    color: #ffcd05;
+    background: rgba(0, 0, 0, 35%); 
+    opacity: 0;
+    animation: fade 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    margin-top: 1em;
+}
+
+header,
+section {
+    padding: 3rem 0;
+}
+
+h1, 
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1, 
+h2,
+h3 {
+    font-family: serif;
+    font-weight: 900;
+    line-height: 1;
+} 
+
+.main-color {
+    color: white;
+    background-color: rgba(245, 222, 179, 65%);
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+
+.secondary-color {
+    color: white;
+    background-color: rgba(255, 215, 0, 75%);
+}
+
+.navigation {
+    border-bottom: #ffcd05 5px solid;
+    background-color: rgba(57, 61, 66);
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-color {
+    color: white;
+    background-color: rgba(0, 0, 0, 75%);
+}
+
+.fourth-color a {
+    color: black;
+}
+
+.fourth-color a,
+.main-color a, 
+.secondary-color a,
+.third-color a
+ {
+    padding: 10px;
+    background-color: #ffcd05;
+}
+
+.text-center {
+    background-image: url('../images/EELlab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    text-align: center;
+}
+
+.text-center {
+      animation: down 1.7s ease-in;
+      animation-fill-mode: forwards;
+}
+
+@keyframes down {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 500px;
+    }
+}
+
+.text {
+    text-align: center;
+}
+
+img {
+     display: block;
+     max-width: 100%;
+     max-height: 300px;
+}
+
+.border {
+     border-radius: 50%;
+     border: 5px solid #ffcd05;
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+}
+
+.more-btn {
+    margin-inline: 60%;
+}
+
+
+.secondary-color img, 
+.third-color img,
+.main-color img {
+    animation: fade 2s ease;
+}
+
+@keyframes fade {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 50%;
+    }
+}
+    
